@@ -195,7 +195,6 @@ class ProfileFragment : Fragment() {
             snackbar.show()
         } else {
             val url = url
-            //Toast.makeText(context, "$messsage $url", Toast.LENGTH_SHORT).show()
             userViewModel.getUser().observe(viewLifecycleOwner, { user ->
                 userViewModel.updatePhoto(UserModel(username =  user.username, email =  user.email, token =  user.token, isLogin = true, profil = url))
             })
