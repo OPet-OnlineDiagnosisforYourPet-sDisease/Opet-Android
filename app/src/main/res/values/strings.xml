@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name" translatable="false">Opet</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="home" translatable="false">Home</string>
+    <string name="symptom_checker">Symptom Checker</string>
+    <string name="text_disclaimer">The Symptom Checker feature provided in this app is for informational purposes only and should not substitute professional veterinary advice. Consult a qualified veterinarian for accurate diagnosis and treatment recommendations. The app developers and owners are not liable for any actions or decisions made based on the Symptom Checker results.</string>
+    <string name="disclaimer">DISCLAIMER</string>
+    <string name="check_symptom">Please select 3 to 7 symptoms best suited to your pet\'s conditions</string>
+    <string name="next">Next</string>
+    <string name="progress" translatable="false">1/3</string>
+    <string name="progress_2" translatable="false">2/3</string>
+    <string name="progress_3" translatable="false">3/3</string>
+    <string name="login">Login</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="email_invalid">Invalid Email</string>
+    <string name="empty_email">Input Email</string>
+    <string name="empty_password">Input Password</string>
+    <string name="invalid_password">Password must be at least 8 characters</string>
+    <string name="password" translatable="false">Password</string>
+    <string name="register" translatable="false">Register</string>
+    <string name="forget_password">Forget password?</string>
+    <string name="name">Full Name</string>
+    <string name="have_account">Have an account ?</string>
+    <string name="account_and_privacy">Account and Privacy</string>
+    <string name="disease_result">Disease Result</string>
+    <string name="result" translatable="false">Hepatitis</string>
+    <string name="more_result">More Result</string>
+    <string name="invalid_symptom">Choose 3 until 7 symptoms</string>
+    <string name="about">About %1s</string>
+    <string name="detail" translatable="false">Rabies adalah penyakit menular yang disebabkan oleh virus dan dapat menginfeksi sistem saraf, berpotensi fatal jika tidak segera diobati.</string>
+    <string name="saran_penanganan">Handling Suggestions</string>
+    <string name="saran" translatable="false">Jadi gini, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \n1. \n2. \n3.</string>
+    <string name="diagnosa_ulang">Re-diagnosis</string>
+    <string name="save">Save</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="check_disease">Check Disease</string>
+    <string name="permission">Permission denied</string>
+    <string name="dark_light_mode">Dark/Light Mode</string>
+    <string name="language">Language</string>
+    <string name="disease_history">Disease History</string>
+    <string name="log_out">Log Out</string>
+    <string name="success_save_history">The disease was successfully saved</string>
+    <string name="success_delete_history">The disease was successfully removed</string>
+    <string name="welcome">Welcome,</string>
+    <string name="article">Article for you</string>
+    <string name="published">Published on %1s</string>
+    <string name="bullet_text">&#8226; Find an area with good lighting \n&#8226; Hold your device steady and level with the object. The object could be rash, furr loss, or open wound in your pet\'s skin. \n&#8226; Position the object according to the guide frame provided on the screen.Focus only on the object you want to capture. \n&#8226; Press the capture button to get a clear photo</string>
+    <string name="scan_disease">Scan Disease</string>
+    <string name="follow_panduan">Follow these instructions:</string>
+    <string name="error_file">Please Input Photo</string>
+    <string name="community">Community</string>
+    <string name="love_total" translatable="false">2k</string>
+    <string name="login_success">Login Success</string>
+    <string name="register_success">Register Success</string>
+    <string name="author">Editor by %1s</string>
+    <string name="empty_name">Input Name</string>
+    <string name="login_first">You need login first</string>
+    <string name="share_to_community">Share to community</string>
+    <string name="share_location">Share your location \t</string>
+    <string name="upload">Upload</string>
+    <string name="title_activity_maps" translatable="false">MapsActivity</string>
+    <string name="location_not_found">Location is not found. Turn on location</string>
+    <string name="empty_caption">Input Caption</string>
+    <string name="available_language">Available in English and Indonesian</string>
+    <string name="development">Currently under development</string>
+    <string name="years_ago">%1$d year(s) ago</string>
+    <string name="months_ago">%1$d month(s) ago</string>
+    <string name="days_ago">%1$d day(s) ago</string>
+    <string name="hours_ago">%1$d hour(s) ago</string>
+    <string name="minutes_ago">%1$d minute(s) ago</string>
+    <string name="seconds_ago">%1$d second(s) ago</string>
+    <string name="log_out_success">Log Out Success</string>
+    <string name="upload_success">Story added successfully</string>
+    <string name="retry">Retry</string>
+    <string name="your_post">Your Post</string>
+    <string name="ask_community">Ask Community</string>
+    <string name="update_profile">Profile updated successfully</string>
+    <string name="text_disclaimer_camera">The Skin Diseases Scanner feature provided in this app is for informational purposes only and should not substitute professional veterinary advice. The result might not accurate because expert doesn\'t involved in building this model and our prediction model is still far from perfect. Consult a qualified veterinarian for accurate diagnosis and treatment recommendations. The app developers and owners are not liable for any actions or decisions made based on the Skin Diseases Scanner results.</string>
+    <string name="failed_camera">Scan Failed, Try Again</string>
+    <string name="see">See</string>
+    <string name="empty_location_community">Nearby Community is empty</string>
+    <string name="empty_location_clinic">Nearby Clinic is empty</string>
+    <string name="nearest_clinic">Nearest Clinic</string>
+    <string name="share_story">Share Post</string>
+    <string name="what_do_you_think">What do you think?</string>
+    <string name="empty_comment">Input Comment</string>
+    <string name="comment_failed">Comment failed to add</string>
+    <string name="comment_success">Comment added successfully</string>
+    <string name="update_profile_failed">Profile failed to update</string>
+
+</resources>

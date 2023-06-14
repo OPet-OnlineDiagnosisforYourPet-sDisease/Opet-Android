@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detailResult.DetailResultActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginBottom="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/baseline_arrow_back_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/main" />
+
+        <TextView
+            android:id="@+id/tv_disease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_marginTop="16dp"
+            android:text="@string/result"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_home" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_detail"
+            android:visibility="gone"
+            tools:visibility="visible"
+            app:cardCornerRadius="15dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="#DBEBEF"
+            app:layout_constraintTop_toBottomOf="@id/tv_disease"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_about"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/about"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_detail"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/detail"
+                    android:lineSpacingExtra="5dp"
+                    android:textColor="@color/black"
+                    android:layout_below="@id/tv_about"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_penanganan"
+            android:visibility="gone"
+            tools:visibility="visible"
+            app:cardCornerRadius="15dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="#DBEBEF"
+            app:layout_constraintTop_toBottomOf="@id/card_detail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_penanganan"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/saran_penanganan"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_saran"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/saran"
+                    android:lineSpacingExtra="5dp"
+                    android:textColor="@color/black"
+                    android:layout_below="@id/tv_penanganan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btn_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:drawableLeft="@drawable/paw"
+            android:drawableTint="@color/white"
+            tools:visibility="visible"
+            android:backgroundTint="@color/main"
+            android:text="@string/home"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@id/card_detail"
+            app:layout_constraintTop_toTopOf="@id/back"
+            app:layout_constraintBottom_toBottomOf="@id/back"/>
+
+        <Button
+            android:id="@+id/btn_clinic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:drawableLeft="@drawable/doctor"
+            android:drawableTint="@color/white"
+            tools:visibility="visible"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/main"
+            android:text="@string/nearest_clinic"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@id/btn_diagnosa"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_penanganan" />
+
+        <Button
+            android:id="@+id/btn_diagnosa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/baseline_refresh_24"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/main"
+            android:text="@string/diagnosa_ulang"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@id/iv_save"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@id/btn_clinic"
+            app:layout_constraintTop_toBottomOf="@id/card_penanganan" />
+
+        <!--<Button
+            android:id="@+id/btn_save"
+            android:backgroundTint="@color/main"
+            android:text="@string/save"
+            android:visibility="gone"
+            tools:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@id/btn_home"
+            app:layout_constraintStart_toStartOf="@id/btn_home"
+            app:layout_constraintEnd_toEndOf="@id/btn_diagnosa"
+            android:layout_marginTop="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>-->
+
+        <ImageView
+            android:id="@+id/iv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:src="@drawable/baseline_bookmark_border_24"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_diagnosa"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@+id/btn_diagnosa"
+            app:layout_constraintTop_toTopOf="@+id/btn_diagnosa"
+            app:tint="?android:textColorPrimary" />
+
+        <ProgressBar
+            android:id="@+id/buffering"
+            style="?android:attr/progressBarStyle"
+            android:visibility="gone"
+            tools:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:id="@+id/bottomNavigation"
+        app:mbn_circleColor="#2FA6B4"
+        app:mbn_selectedIconColor="@color/white"
+        app:mbn_rippleColor="@color/white"
+        app:mbn_defaultIconColor="@color/white"
+        app:mbn_backgroundBottomColor="#2FA6B4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+<!--
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    &lt;!&ndash; Konten halaman HomeActivity &ndash;&gt;
+
+    &lt;!&ndash;<meow.bottomnavigation.MeowBottomNavigationCell
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:mbn_backgroundBottomColor="#FFFFFF"
+        app:mbn_countBackgroundColor="#FF0000"
+        app:mbn_defaultIconColor="#BFBFBF"
+        app:mbn_rippleColor="#EDEDED"
+        app:mbn_selectedIconColor="#FF4081"
+        app:mbn_shadowColor="#7F7F7F" />
+&ndash;&gt;
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:mbn_backgroundBottomColor="#2FA6B4"
+        app:mbn_countBackgroundColor="#E3FFEE"
+        app:mbn_defaultIconColor="#BFBFBF"
+        app:mbn_rippleColor="#EDEDED"
+        app:mbn_selectedIconColor="#E3FFEE"
+        app:mbn_shadowColor="#F6F6F6" />
+</RelativeLayout>-->

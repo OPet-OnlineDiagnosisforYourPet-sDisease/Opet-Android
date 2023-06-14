@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    tools:context=".ui.result.ResultActivity">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title_result"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/symptom_checker"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginTop="85dp"
+        android:textSize="32sp"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_result"
+        android:max="3"
+        android:progress="3"
+        android:progressTint="@color/white"
+        android:progressBackgroundTint="#EBD4D4"
+        android:layout_margin="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/progress_3"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+    <View
+        android:id="@+id/rounded"
+        android:background="@drawable/rectangle_13"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_progress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <TextView
+        android:id="@+id/tv_disease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/disease_result"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/rounded" />
+
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/result"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/iv_result"
+        app:layout_constraintStart_toStartOf="@+id/iv_result"
+        app:layout_constraintTop_toBottomOf="@+id/iv_result" />
+
+    <ImageView
+        android:id="@+id/iv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/result"
+        app:layout_constraintEnd_toEndOf="@+id/tv_disease"
+        app:layout_constraintStart_toStartOf="@+id/tv_disease"
+        app:layout_constraintTop_toBottomOf="@+id/tv_disease" />
+
+    <Button
+        android:id="@+id/btn_ask_community"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/main"
+        android:text="@string/ask_community"
+        android:drawableLeft="@drawable/community"
+        android:drawableTint="@color/white"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_more_result"
+        app:layout_constraintEnd_toEndOf="@id/btn_more_result"
+        app:layout_constraintStart_toStartOf="@id/btn_more_result"/>
+
+    <Button
+        android:id="@+id/btn_more_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/main"
+        android:text="@string/more_result"
+        android:drawableLeft="@drawable/outline_info_24"
+        android:textAllCaps="false"
+        android:drawableTint="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/tv_result"
+        app:layout_constraintEnd_toEndOf="@id/tv_result"
+        app:layout_constraintStart_toStartOf="@id/tv_result"/>
+
+
+    <!--<TextView
+        android:id="@+id/tv_result"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

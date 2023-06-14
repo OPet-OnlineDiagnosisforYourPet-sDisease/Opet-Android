@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detailCommunity.DetailCommunityActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/baseline_arrow_back_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/main" />
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            card_view:layout_constraintTop_toBottomOf="@id/back"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="32dp"
+            card_view:cardCornerRadius="15dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_profile"
+                    card_view:layout_constraintTop_toTopOf="parent"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginTop="16dp"
+                    card_view:civ_circle_background_color="?android:textColorPrimary"
+                    android:layout_marginStart="16dp"
+                    android:src="@drawable/article"
+                    android:layout_width="31dp"
+                    android:layout_height="31dp"/>
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:transitionName="name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="@string/name"
+                    android:textColor="?android:textColorPrimary"
+                    android:textSize="12sp"
+                    card_view:layout_constraintBottom_toBottomOf="@+id/iv_profile"
+                    card_view:layout_constraintStart_toEndOf="@id/iv_profile"
+                    card_view:layout_constraintTop_toTopOf="@id/iv_profile" />
+
+                <ImageView
+                    android:id="@+id/iv_setting"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/baseline_more_vert_24"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    card_view:tint="?android:textColorPrimary"/>
+
+                <TextView
+                    android:id="@+id/tv_caption"
+                    android:transitionName="description"
+                    tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...Show more"
+                    card_view:layout_constraintTop_toBottomOf="@id/iv_profile"
+                    card_view:layout_constraintStart_toStartOf="@id/iv_profile"
+                    card_view:layout_constraintEnd_toEndOf="@id/iv_setting"
+                    android:lineSpacingExtra="8dp"
+                    android:layout_marginTop="16dp"
+                    android:textColor="?android:textColorPrimary"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/iv_image"
+                    android:transitionName="photo"
+                    card_view:layout_constraintTop_toBottomOf="@id/tv_caption"
+                    card_view:layout_constraintStart_toStartOf="@id/tv_caption"
+                    card_view:layout_constraintEnd_toEndOf="@id/tv_caption"
+                    android:src="@drawable/article"
+                    card_view:riv_corner_radius="12dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="0dp"
+                    android:layout_height="350dp"/>
+
+                <ImageView
+                    android:id="@+id/iv_love"
+                    card_view:layout_constraintTop_toBottomOf="@id/iv_image"
+                    android:layout_marginTop="16dp"
+                    card_view:layout_constraintStart_toStartOf="@id/iv_image"
+                    android:src="@drawable/baseline_favorite_border_24"
+                    card_view:layout_constraintHorizontal_chainStyle="spread"
+                    card_view:tint="?android:textColorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_love"
+                    android:text="@string/love_total"
+                    android:layout_marginStart="8dp"
+                    android:textColor="?android:textColorPrimary"
+                    card_view:layout_constraintTop_toTopOf="@id/iv_love"
+                    card_view:layout_constraintStart_toEndOf="@id/iv_love"
+                    card_view:layout_constraintBottom_toBottomOf="@id/iv_love"
+                    card_view:layout_constraintHorizontal_chainStyle="spread"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/iv_comment"
+                    android:src="@drawable/comment"
+                    card_view:tint="?android:textColorPrimary"
+                    card_view:layout_constraintStart_toEndOf="@id/tv_love"
+                    card_view:layout_constraintTop_toTopOf="@id/tv_love"
+                    card_view:layout_constraintBottom_toBottomOf="@id/tv_love"
+                    android:layout_marginStart="16dp"
+                    card_view:layout_constraintHorizontal_chainStyle="spread"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_comment"
+                    android:text="@string/love_total"
+                    android:layout_marginStart="8dp"
+                    android:textColor="?android:textColorPrimary"
+                    card_view:layout_constraintTop_toTopOf="@id/iv_comment"
+                    card_view:layout_constraintStart_toEndOf="@id/iv_comment"
+                    card_view:layout_constraintBottom_toBottomOf="@id/iv_comment"
+                    card_view:layout_constraintHorizontal_chainStyle="spread"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/iv_share"
+                    android:src="@drawable/share"
+                    card_view:tint="?android:textColorPrimary"
+                    card_view:layout_constraintStart_toEndOf="@id/tv_comment"
+                    card_view:layout_constraintTop_toTopOf="@id/tv_comment"
+                    card_view:layout_constraintBottom_toBottomOf="@id/tv_comment"
+                    card_view:layout_constraintHorizontal_chainStyle="spread"
+                    android:layout_marginStart="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_share"
+                    android:text="@string/love_total"
+                    android:layout_marginStart="8dp"
+                    android:textColor="?android:textColorPrimary"
+                    card_view:layout_constraintTop_toTopOf="@id/iv_share"
+                    card_view:layout_constraintStart_toEndOf="@id/iv_share"
+                    card_view:layout_constraintBottom_toBottomOf="@id/iv_share"
+                    card_view:layout_constraintHorizontal_chainStyle="spread"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    card_view:layout_constraintBottom_toBottomOf="@id/tv_share"
+                    card_view:layout_constraintEnd_toEndOf="@id/iv_image"
+                    card_view:layout_constraintHorizontal_bias="0.45"
+                    card_view:layout_constraintHorizontal_chainStyle="spread"
+                    card_view:layout_constraintStart_toEndOf="@+id/tv_share"
+                    card_view:layout_constraintTop_toTopOf="@id/tv_share"
+                    android:textSize="12sp"
+                    tools:text="59 menit yang lalu" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_comments"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            app:layout_constraintBottom_toTopOf="@id/card_comment"
+            app:layout_constraintEnd_toEndOf="@id/card_view"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/card_view"
+            app:layout_constraintTop_toBottomOf="@id/card_view"
+            app:layout_constraintVertical_bias="0.0"
+            tools:listitem="@layout/item_comment" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_comment"
+            android:visibility="gone"
+            tools:visibility="visible"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_comment"
+                    android:hint="@string/what_do_you_think"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#756A6A"
+                    android:background="@drawable/edit_text_shadow"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/iv_send"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:padding="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/iv_send"
+                    android:src="@drawable/baseline_send_24"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/et_comment"
+                    app:layout_constraintBottom_toBottomOf="@id/et_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:tint="@color/main" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar2"
+                    style="?android:attr/progressBarStyle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/img_empty"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/empty"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
