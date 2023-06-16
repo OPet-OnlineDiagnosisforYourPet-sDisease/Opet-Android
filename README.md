@@ -2,7 +2,7 @@
 The source code of the Opet (Online Diagnosis for Your Pet) Apps with using kotlin as Programming Language
 
 - ### Project Architecture
-![OpetArchitecture](https://github.com/OPet-OnlineDiagnosisforYourPet-sDisease/Opet-Android/assets/72749867/5f785f14-735d-4569-b1b0-bf98ad0ae31e)
+![OPet](https://github.com/OPet-OnlineDiagnosisforYourPet-sDisease/Opet-Android/assets/122871669/d7ee520f-c15a-49d3-95eb-3588c8a93b57)
 
 - ### Features of OPet 
   * **Symptom Checker**, This feature helps pet lovers to check their pet disease from the symptom
